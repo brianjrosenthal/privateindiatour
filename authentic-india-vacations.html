@@ -72,6 +72,22 @@ input[type=submit], input[type=button], a.button, .button{color:#ffffff;border-c
 .page_tagline{color:#8D9199;font-size:15px;font-weight:500;}
 #page_content_wrapper .sidebar .content .sidebar_widget li h2.widgettitle, h2.widgettitle{font-family:Poppins, Helvetica, Arial, sans-serif;font-size:18px;font-weight:700;color:#000000;}
 #social_share_wrapper, hr, .themeborder{border-color:#dce0e0;}
+
+/* ---- Header Layout Fix: logo + nav on same row ---- */
+.top_bar .standard_wrapper { display: flex; align-items: flex-start; }
+#logo_wrapper { width: 255px; flex-shrink: 0; }
+#logo_normal, #logo_transparent { flex-shrink: 0; }
+#menu_wrapper { flex: 1 !important; display: flex !important; justify-content: flex-end !important; align-items: flex-start !important; padding-top: 70px !important; padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; }
+#nav_wrapper, .nav_wrapper_inner, #menu_border_wrapper { display: flex; align-items: center; }
+#menu_wrapper .nav { display: flex; flex-wrap: nowrap; align-items: center; list-style: none; margin: 0; padding: 0; }
+#logo_right_button { display: none; }
+@media (max-width: 980px) {
+    .top_bar .standard_wrapper { align-items: center; }
+    #logo_wrapper { width: 255px; }
+    #menu_wrapper { padding-top: 0; }
+    #menu_wrapper .nav { display: none; }
+    #logo_right_button { display: flex; align-items: center; margin-left: 16px; }
+}
 </style>
 
 <style>
